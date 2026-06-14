@@ -29,7 +29,7 @@ long sentPackets = 0;
 #define DEST_ADDR 1
 
 ESP8266WebServer server(80);
-SoftwareSerial LoRa(D5, D6);   // RX, TX
+SoftwareSerial LoRa(TX2, RX2);   // RX, TX
 
 String lastMsg="---";
 int rssi=0;
